@@ -65,6 +65,8 @@ unzip -q val2017.zip -d datasets/coco/images
     ```
 2. 安装python依赖。
     ```
+    cd <ModelZoo_path>/PyTorch/contrib/Detection/YOLO12
+    pip install -e.
     ruamel.yaml==0.18.6
     git+https://gitee.com/xiwei777/tcap_dllogger.git
     ```
@@ -78,13 +80,13 @@ unzip -q val2017.zip -d datasets/coco/images
     
 
 2. 训练指令。
-    - 单机单卡
+    - 单机八卡
         ```
         python ./run_scripts/run_yolo12.py \
             --model_name yolo12n \
             --total_epochs 600 \
-            --batch_size 32 \
-            --device 1 \
+            --batch_size 256 \
+            --device 8 \
             --data_path /data/teco-data/COCO \
             --early_stop 100 \
             --num_workers 8 \
