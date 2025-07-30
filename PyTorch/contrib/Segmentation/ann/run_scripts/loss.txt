@@ -1,4 +1,0 @@
-MeanRelativeError: -0.22970206904250673
-MeanAbsoluteError: -0.4743536502122879
-Rule,mean_absolute_error -0.4743536502122879
-pass mean_relative_error=-0.22970206904250673 <= 0.05 or mean_absolute_error=-0.4743536502122879 <= 0.0002
