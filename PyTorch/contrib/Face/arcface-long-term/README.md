@@ -72,10 +72,10 @@ python run_scripts/run_arcface.py \
 sdaa结果如下  
 |加速卡数量|模型|混合精度|Epoch|Batch size|Recall@1|mAP@10|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|1|ArcFace|是|1|64|90.2377|70.1729|
+|1|ArcFace|是|50|64|90.2377|70.1729|
 
 
 cuda结果如下
 |加速卡数量|模型|混合精度|Epoch|Batch size|Recall@1|mAP@10|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|1|ArcFace|是|1|64|90.18|69.3|
+|1|ArcFace|是|50|64|90.18|69.3|
