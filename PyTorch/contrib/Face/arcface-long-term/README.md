@@ -53,9 +53,9 @@ pip install -r requirements.txt
 在构建好的环境中，进入训练脚本所在目录。
 
 cd <ModelZoo_path>/PyTorch/contrib/Face/ArcFace/run_scripts
-运行训练。该模型支持单机多卡.
+运行训练。该模型支持单机单卡.
 
-单机多卡
+单机单卡
 python run_scripts/run_arcface.py \
   --config config/arcface/resnet50-arcface_8xb32_inshop.py \
   --launcher pytorch --nproc-per-node 4 \
