@@ -54,7 +54,7 @@ ccnet 使用 CityScapes 数据集，该数据集为开源数据集，可从 [Cit
 
 1. 在构建好的环境中，进入训练脚本所在目录。
   ```
-  cd <ModelZoo_path>/PyTorch/contrib/Segmentation/ann/run_scripts
+  cd <ModelZoo_path>/PyTorch/contrib/Segmentation/ccnet/run_scripts
   ```
 
 2. 运行训练。该模型支持单机单卡。
