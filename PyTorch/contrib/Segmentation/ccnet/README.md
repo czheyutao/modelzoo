@@ -3,7 +3,6 @@
 ## 1. 模型概述
  [CCNet: Criss-Cross Attention for Semantic Segmentation](https://arxiv.org/abs/1811.11721)
 🔗 [官方代码仓库](https://github.com/speedinghzl/CCNet)
-🔎 [代码片段（mmsegmentation 实现）](https://github.com/open-mmlab/mmsegmentation/blob/v0.17.0/mmseg/models/decode_heads/apc_head.py#L111)
 
 上下文信息在诸如语义分割和目标检测等视觉理解问题中至关重要。我们提出了一种高效获取整图上下文信息的方法——**Criss-Cross Network（CCNet）**。
 
