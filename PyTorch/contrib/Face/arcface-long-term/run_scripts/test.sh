@@ -13,7 +13,7 @@ mim install -e .
 pip install -r requirements.txt
 pip3 install numpy==1.24.3
 
-cd $script_path
+cd "$script_path/.."
 
 #执行训练
 python run_scripts/run_arcface.py \
@@ -26,5 +26,4 @@ python run_scripts/run_arcface.py \
     "query_dataloader.dataset.data_root=$data_path" \
     "gallery_dataloader.dataset.data_root=$data_path" \
     "model.prototype.dataset.data_root=$data_path" \
-  2>&1 | tee sdaa.log
-
+  2>&1 | tee cuda.log
