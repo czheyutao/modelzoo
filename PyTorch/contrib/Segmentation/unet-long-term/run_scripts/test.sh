@@ -18,4 +18,4 @@ cd $script_path
 #执行训练
 python run_unet.py --config ../configs/unet/unet_s5-d16_deeplabv3_4xb4-40k_chase-db1-128x128.py \
     --launcher pytorch --nproc-per-node 4 --amp \
-    --cfg-options "train_dataloader.dataset.data_root=$data_path" "val_dataloader.dataset.data_root=$data_path" 2>&1 | tee sdaa.log
+    --cfg-options "train_dataloader.dataset.dataset.data_root=$data_path" "val_dataloader.dataset.data_root=$data_path" 2>&1 | tee sdaa.log

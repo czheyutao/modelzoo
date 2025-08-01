@@ -26,8 +26,10 @@ Unet是一种用于图像分割的卷积神经网络模型，由Olaf Ronneberger
 python tools/dataset_converters/chase_db1.py /path/to/CHASEDB1.zip
 ```
 之后进行解压数据集，运行如下命令：
-unzip CHASEDB1.zip /path/to/directory
-如果不指定解压目录，解压后的文件会默认保存在'/path/to/mmsegmentation/data/CHASE_DB1'中。
+```bash
+unzip CHASEDB1.zip
+``` 
+解压后的文件将保存在unet-long-term/data/CHASE_DB1中。
 
 ### 2.3 构建环境
 所使用的环境下已经包含PyTorch框架虚拟环境
@@ -52,7 +54,7 @@ cd <ModelZoo_path>/PyTorch/contrib/Classification/unet-long-term/run_scripts
 ```bash
 python run_unet.py --config ../configs/unet/unet_s5-d16_deeplabv3_4xb4-40k_chase-db1-128x128.py \
     --launcher pytorch --nproc-per-node 4 --amp \
-    --cfg-options "train_dataloader.dataset.data_root=$data_path" "val_dataloader.dataset.data_root=$data_path" 2>&1 | tee sdaa.log
+    --cfg-options "train_dataloader.dataset.dataset.data_root=$data_path" "val_dataloader.dataset.data_root=$data_path" 2>&1 | tee sdaa.log
 ```
 
 ### 2.4 训练结果
